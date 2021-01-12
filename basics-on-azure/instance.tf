@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "demo-instance" {
   os_profile_linux_config {
     disable_password_authentication = true
     ssh_keys {
-      key_data = file("ssh-keys/mykey.pub")
+      key_data = file("../ssh-keys/mykey.pub")
       //  location of the ssh key in the actual VM in azure - we will put the key in there during creation,
 //      do not put comments inline with the path - it breaks the terraform/azure will complain about non-default path
 //    , but show only the one being there

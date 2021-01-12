@@ -34,4 +34,4 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-basics-on-azure/ssh-keys/mykey
+ssh-keys/mykey
